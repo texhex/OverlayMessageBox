@@ -9,7 +9,7 @@ OverlayMessageBoxCmd.exe -Caption "Title of message" --symbol Information -Text 
 ![Example image](/images/example.png?raw=true "Example image")
 
 
-## Using Overlay Message Box ##
+## General usage ##
 
 The most basic example is that you only display a message with this command:
 
@@ -53,4 +53,42 @@ IF "%RETCODE%"=="105" goto NO
 
 Each button has a different return code. To see the full list, use ``OverlayMessageBoxCmd.exe -?``
 
-The download file (see [Releases](releases/latest)) contains a folder examples that has ready-to-use batch files you might find useful. 
+The download file (see [Releases](https://github.com/texhex/OverlayMessageBox/releases/latest) contains a folder examples that has ready-to-use batch files you might find useful. 
+
+## Using it in your own programs ##
+
+In case you want to use it in your own .NET application, you can do so easily. Add a reference to OverlayMessageBox.dll and add it with USING:
+
+```c#
+ using OverlayMessageBoxLibrary;  
+```
+
+Then code right away
+
+```c#
+    OverlayMessageBoxSettings settings = new OverlayMessageBoxSettings();
+            
+    settings.Caption = "Title goes here";
+    settings.Headline = "My Headline";
+    settings.Text = "Sample text";
+    settings.Symbol = OverlayMessageBoxSymbol.Warning;
+    settings.ButtonSet = OverlayMessageBoxButtonSet.RetryCancel;
+
+    if (OverlayMessageBox.Show(settings) == OverlayMessageBoxButton.Cancel)
+    {
+       MessageBox.Show("Cancel selected!");
+    }
+```
+
+If you are using the Headline parameter (which will trigger a TaskDialog instead of a MessageBox), you need to add a reference to the new ComCtrl32.dll v6.0 by using a manifest. 
+
+For details, please see: http://stackoverflow.com/questions/719251/unable-to-find-an-entry-point-named-taskdialogindirect-in-dll-comctl32
+
+
+## Copyright and License ##
+
+Copyright © 2012-2016 [Michael Hex](http://www.texhex.info/) ([@texhex](https://github.com/texhex/)).
+
+Licensed under the **Apache License, Version 2.0**. For details, please see [LICENSE.txt](https://github.com/texhex/overlaymessagebox/blob/master/licenses/LICENSE.txt).
+
+

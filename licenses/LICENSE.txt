@@ -1,0 +1,68 @@
+Overlay Message Box
+Copyright © 2012-2016 Michael Hex 
+All Rights Reserved
+https://github.com/texhex/OverlayMessageBox
+
+Source code of Overlay Message Box
+Copyright © 2010-2015 Michael Hex 
+https://github.com/texhex/OverlayMessageBox
+Licensed under the Apache License, Version 2.0
+   http://www.apache.org/licenses/LICENSE-2.0 
+   The license is distributed with this software as LICENSE-Apache-2.0.txt
+
+   
+This is derivative/combined work of other software:
+
+Idea taken from StackExchange
+http://stackoverflow.com/questions/2176648/screen-overlay-for-screenshot
+Code used in this software copied from this answer, especially the code from: 
+ Rob Fonseca-Ensor (http://stackoverflow.com/users/21433/rob-fonseca-ensor)
+ BillW  (http://stackoverflow.com/users/133321/billw)
+ 
+ 
+TaskDialog InterOp taken from
+http://bartdesmet.net/blogs/bart/archive/2006/09/26/4470.aspx
+by Bart De Smet
+
+
+Lightweight C# Command Line Parser  
+Copyright 2009 Christian Bolterauer
+http://www.codeproject.com/Articles/39120/Lightweight-C-Command-Line-Parser
+Licensed under the Code Project Open License (CPOL) 
+  http://www.codeproject.com/info/cpol10.aspx 
+  The license is distributed with this software as LICENSE-CPOL.htm
+ 
+ 
+Created with Microsoft Visual Studio Community 2015
+© 2016 Microsoft Corporation
+http://www.visualstudio.com/
+
+ 
+This product includes software developed by Jon Skeet
+http://www.jonskeet.uk/
+Copyright (c) 2004-2006 Jon Skeet. All rights reserved.
+http://codeblog.jonskeet.uk/
+http://www.yoda.arachsys.com/csharp/
+
+
+Markdown files created with MarkdownPad
+Copyright © 2013-2015 Evan Wondrasek / Apricity Software LLC
+All Rights Reserved
+http://markdownpad.com/
+
+
+Application Icon (view-fullscreen-2) 
+ from Open Icon Library http://openiconlibrary.sourceforge.net/
+Crystal Project (crystal)
+	link: http://everaldo.com/crystal/
+	license: LGPL-2.1
+	license link: http://creativecommons.org/licenses/LGPL/2.1/
+	
+ 
+ 
+Microsoft, PowerShell, Windows, and the Windows logo are trademarks, or 
+registered trademarks of Microsoft Corporation in the United States 
+and/or other countries.
+
+All other product and company names mentioned herein are the trademarks or 
+registered trademarks of their respective owners.
