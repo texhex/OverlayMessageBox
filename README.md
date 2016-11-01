@@ -52,7 +52,7 @@ If you wish to split your text among multiple lines, you can use \n to insert li
 
 ![Example 5 image](/images/example5.png?raw=true "Example image 5")
 
-## Using buttons ##
+## Working with buttons ##
 
 You can also define which buttons are displayed and determine which button was selected by checking the return code.
 
@@ -68,9 +68,9 @@ IF "%RETCODE%"=="105" goto NO
 
 Each button has a different return code. To see the full list, use ``OverlayMessageBoxCmd.exe -?``
 
-The download file (see [Releases](https://github.com/texhex/OverlayMessageBox/releases/latest) contains a folder examples that has ready-to-use batch files you might find useful. 
+The download file (see [Releases](https://github.com/texhex/OverlayMessageBox/releases/latest)) contains a folder ``Examples`` that includes use batch files that use this method.
 
-## Using it in your own programs ##
+## Using it in your own program ##
 
 In case you want to use it in your own .NET application, you can do so easily. Add a reference to OverlayMessageBox.dll and add it with USING:
 
@@ -95,7 +95,7 @@ Then code right away
     }
 ```
 
-If you are using the Headline parameter (which will trigger a TaskDialog instead of a MessageBox), you need to add a reference to the new ComCtrl32.dll v6.0 by using a manifest. 
+If you specify the Headline parameter (which will trigger a TaskDialog instead of a MessageBox), you need to add a reference to the new ComCtrl32.dll v6.0 with a manifest. 
 
 For details, please see: http://stackoverflow.com/questions/719251/unable-to-find-an-entry-point-named-taskdialogindirect-in-dll-comctl32
 
