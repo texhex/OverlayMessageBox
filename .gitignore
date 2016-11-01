@@ -11,10 +11,14 @@
 *.userprefs
 
 # Build results
+[Rr]elease/any
+[Rr]elease/x86
+[Rr]elease/x64
+
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
+#[Rr]elease/
+#[Rr]eleases/
 x64/
 x86/
 build/
@@ -62,6 +66,7 @@ dlldata.c
 *.pidb
 *.svclog
 *.scc
+*.vshost.*
 
 # Chutzpah Test files
 _Chutzpah*

@@ -1,6 +1,8 @@
 # Overlay Message Box
 
-Shows a message on a dimmed desktop that the user is forced to acknowledge. This ensures the attention of the user and makes it a great app for any script that needs to inform about something. All options (Title, Text, Icons etc.) can be set using command line parameters.
+Shows a message on a dimmed desktop that the user is forced to acknowledge. All other running programs are "dimmed" and cliking on them just makes the displayed message flush.    
+
+This ensures the attention of the user and makes it a great app for any script that needs to inform about something. All options (Title, Text, Icons etc.) can be set using command line parameters.
 
 ```
 OverlayMessageBoxCmd.exe -Caption "Title of message" --symbol Information -Text "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
@@ -8,8 +10,21 @@ OverlayMessageBoxCmd.exe -Caption "Title of message" --symbol Information -Text 
 
 ![Example image](/images/example.png?raw=true "Example image")
 
+## General ##
 
-## General usage ##
+Prerequisite: .NET Framework 4.5 or higher needs to be installed.
+
+OverlayMessageBox comes with two different executable:
+
+* ``OverlayMessageBoxCmd.exe`` is intent for use in batch files, scripts etc. that are already displaying a command prompt window.
+
+* ``OverlayMessageBoxUI.exe`` is intent if you want to call it from a Windows application or any other executable and you want to avoid showing a command prompt window.
+
+Except the different behavior of creating a command prompt window, both versions behave the same.
+
+Please note that you will also need to copy ``OverlayMessageBox.dll``, both of them do not work if this file is missing. 
+
+## Usage ##
 
 The most basic example is that you only display a message with this command:
 
@@ -60,7 +75,7 @@ The download file (see [Releases](https://github.com/texhex/OverlayMessageBox/re
 In case you want to use it in your own .NET application, you can do so easily. Add a reference to OverlayMessageBox.dll and add it with USING:
 
 ```c#
- using OverlayMessageBoxLibrary;  
+ using OverlayMessageBox;  
 ```
 
 Then code right away
@@ -74,7 +89,7 @@ Then code right away
     settings.Symbol = OverlayMessageBoxSymbol.Warning;
     settings.ButtonSet = OverlayMessageBoxButtonSet.RetryCancel;
 
-    if (OverlayMessageBox.Show(settings) == OverlayMessageBoxButton.Cancel)
+    if (OverlayMessageBox.OverlayMessageBox.Show(settings) == OverlayMessageBoxButton.Cancel)
     {
        MessageBox.Show("Cancel selected!");
     }

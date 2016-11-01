@@ -4,7 +4,7 @@ All Rights Reserved
 https://github.com/texhex/OverlayMessageBox
 
 Source code of Overlay Message Box
-Copyright © 2010-2015 Michael Hex 
+Copyright © 2012-2016 Michael Hex 
 https://github.com/texhex/OverlayMessageBox
 Licensed under the Apache License, Version 2.0
    http://www.apache.org/licenses/LICENSE-2.0 
