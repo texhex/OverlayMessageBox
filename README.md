@@ -25,7 +25,32 @@ For more control, you can specify the title, the caption and a different symbol:
 
 You can also use a "Task Dialog" style message box which supports a headline before the text. Just specify the parameter "Headline" to use it:
 
-OverlayMessageBoxCmd.exe -Caption "Title" -Headline "The headline" -Text "My text" -Symbol Warning
+``OverlayMessageBoxCmd.exe -Caption "Title" -Headline "The headline" -Text "My text" -Symbol Warning``
 
 ![Example 3 image](/images/example3.png?raw=true "Example image 3")
 
+**Note**: When using ``-Headline`` together with ``-Symbol Question``, no icon will appear because Task Dialog does not support this symbol.
+
+If you wish to split your text among multiple lines, you can use \n to insert line breaks.
+
+``OverlayMessageBoxCmd.exe -Caption "Title" -Text "My text\nLine 2\nLine 3\n\nLine 5" -Symbol Warning
+
+![Example 5 image](/images/example4.png?raw=true "Example image 5")
+
+## Using buttons ##
+
+You can also define which buttons are displayed and determine which button was selected by checking the return code.
+
+```
+OverlayMessageBoxCmd.exe -Caption "Title" -Headline "The headline" -Text "My text" -Symbol Warning -Buttonset YesNo 
+SET RETCODE=%ERRORLEVEL%
+
+IF "%RETCODE%"=="104" goto YES
+IF "%RETCODE%"=="105" goto NO
+```
+
+![Example 4 image](/images/example4.png?raw=true "Example image 4")
+
+Each button has a different return code. To see the full list, use ``OverlayMessageBoxCmd.exe -?``
+
+The download file (see [Releases](/releases/newest)) contains a folder examples that has ready-to-use batch files you might find useful. 
