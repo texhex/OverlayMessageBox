@@ -33,9 +33,9 @@ You can also use a "Task Dialog" style message box which supports a headline bef
 
 If you wish to split your text among multiple lines, you can use \n to insert line breaks.
 
-``OverlayMessageBoxCmd.exe -Caption "Title" -Text "My text\nLine 2\nLine 3\n\nLine 5" -Symbol Warning
+``OverlayMessageBoxCmd.exe -Caption "Title" -Text "My text\nLine 2\nLine 3\n\nLine 5" -Symbol Warning``
 
-![Example 5 image](/images/example4.png?raw=true "Example image 5")
+![Example 5 image](/images/example5.png?raw=true "Example image 5")
 
 ## Using buttons ##
 
@@ -53,4 +53,4 @@ IF "%RETCODE%"=="105" goto NO
 
 Each button has a different return code. To see the full list, use ``OverlayMessageBoxCmd.exe -?``
 
-The download file (see [Releases](/releases/newest)) contains a folder examples that has ready-to-use batch files you might find useful. 
+The download file (see [Releases](releases/latest)) contains a folder examples that has ready-to-use batch files you might find useful. 
