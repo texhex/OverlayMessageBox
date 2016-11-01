@@ -12,7 +12,7 @@ OverlayMessageBoxCmd.exe -Caption "Title of message" --symbol Information -Text 
 
 ## General ##
 
-Prerequisite: .NET Framework 4.5 or higher needs to be installed.
+Download the newest version from [Releases](https://github.com/texhex/OverlayMessageBox/releases/latest). It requires .NET Framework 4.5 or higher to be installed. 
 
 OverlayMessageBox comes with two different executable:
 
